@@ -1,0 +1,24 @@
+﻿
+@model MovieList.Models.ProfileViewModel
+
+<div class="container">
+    <h2>Edit Profile</h2>
+    <form asp-action="Edit" method="post">
+        <div class="form-group">
+            <label asp-for="AvatarUrl"></label>
+            <input asp-for="AvatarUrl" class="form-control" />
+            <span asp-validation-for="AvatarUrl" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="IsPrivate"></label>
+            <input asp-for="IsPrivate" type="checkbox" />
+            <span asp-validation-for="IsPrivate" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+
+
+    </form>
+</div>
+

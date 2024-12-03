@@ -1,0 +1,22 @@
+﻿
+@page
+@model movie.Areas.Identity.Pages.Account.EditProfileModel
+@{
+    ViewData["Title"] = "Edit Profile";
+}
+
+<h2>Edit Profile</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Input.IsProfilePrivate" class="control-label"></label>
+        <input asp-for="Input.IsProfilePrivate" class="form-control" type="checkbox" />
+        <span asp-validation-for="Input.IsProfilePrivate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+    </div>
+</form>
+
+<!-- Add any other profile information fields here -->

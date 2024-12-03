@@ -1,0 +1,202 @@
+﻿/* Default link color */
+a {
+    color: #0366d6;
+    text-decoration: none; /* Prevents underlines */
+}
+
+    a:hover, a:focus {
+        color: #024a86; /* Darker shade for hover effect */
+        text-decoration: underline; /* Underline on hover for better UX */
+    }
+
+    /* Navbar Brand */
+    a.navbar-brand {
+        white-space: normal;
+        text-align: center;
+        word-break: break-all;
+    }
+
+/* Button Styling */
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+    .btn-primary:hover, .btn-primary:focus {
+        background-color: #155a8a; /* Darker button color on hover */
+        border-color: #12476e;
+        transform: translateY(-2px); /* Subtle hover effect */
+    }
+
+/* Active Nav Link */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky Footer */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Box shadow for visual appeal */
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+/* Footer Styles */
+body {
+    margin-bottom: 60px; /* Adjusts for sticky footer */
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 60px; /* Vertically center the text */
+    background-color: #f8f9fa; /* Light background for footer */
+    border-top: 1px solid #e5e5e5; /* Subtle border to separate footer */
+}
+
+/* Form Enhancements */
+input, select, textarea {
+    border-radius: .25rem;
+    padding: .5rem; /* Adds padding inside inputs */
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    input:focus, select:focus, textarea:focus {
+        border-color: #1b6ec2;
+        box-shadow: 0 0 0 0.25rem rgba(27, 110, 194, 0.25); /* Blue focus effect */
+    }
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+
+    table th, table td {
+        padding: .75rem;
+        text-align: left;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+    }
+
+    table th {
+        background-color: #f8f9fa;
+        font-weight: bold;
+    }
+
+    table tbody tr:nth-child(odd) {
+        background-color: #f2f2f2; /* Stripe rows */
+    }
+
+    table tbody tr:hover {
+        background-color: #e2e6ea; /* Hover effect for rows */
+    }
+
+/* Card Styles */
+.card {
+    border: 1px solid #ddd;
+    border-radius: .25rem;
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-5px); /* Slight hover effect on cards */
+        box-shadow: 0 .25rem .75rem rgba(0, 0, 0, 0.15);
+    }
+
+.card-header {
+    background-color: #1b6ec2;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Add some visual improvements to modals */
+.modal-content {
+    border-radius: .25rem;
+    padding: 20px;
+}
+
+.modal-header {
+    background-color: #1b6ec2;
+    color: #fff;
+}
+
+.modal-footer .btn-primary {
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #007bff; /* Blue navbar */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: .25rem;
+    margin-bottom: 30px;
+}
+
+    .navbar a {
+        color: #fff;
+    }
+
+        .navbar a:hover {
+            color: #d1e7fd;
+        }
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Enhance alert boxes */
+.alert-info {
+    background-color: #cce5ff;
+    color: #004085;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Button styling for specific action buttons */
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #c82333;
+}
+
+    .btn-danger:hover {
+        background-color: #c82333;
+        border-color: #bd2130;
+    }
